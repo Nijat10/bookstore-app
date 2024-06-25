@@ -22,7 +22,8 @@ This is a RESTful API for a simple bookstore, implemented using Node.js, Express
 
 ```bash
 git clone https://github.com/yourusername/bookstore-api.git
-cd api
+cd bookstore-app
+
 ```
 
 2. Install dependencies
