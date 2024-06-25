@@ -47,9 +47,9 @@ app.use("/api/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 ## API Endpoints
 ### Authentication
-Sign Up: POST /api/auth/signup
+Sign Up: POST /api/auth/registration
 
-Sign In: POST /api/auth/signin
+Sign In: POST /api/auth/login
 
 On successful sign-in, you will receive a JWT token which can be used to access protected routes.
 
