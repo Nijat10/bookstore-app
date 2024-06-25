@@ -40,20 +40,20 @@ cd api
 6. Start the server
    npm start
 
-After that, you must call "your-url/api/api-docs" for Swagger documentation
+7. After that, you must call "your-url/api/api-docs" for Swagger documentation
 
 //Swagger UI route
 app.use("/api/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-API Endpoints
-Authentication
+## API Endpoints
+### Authentication
 Sign Up: POST /api/auth/signup
 
 Sign In: POST /api/auth/signin
 
 On successful sign-in, you will receive a JWT token which can be used to access protected routes.
 
-Books
+### Books
 Create Book: POST /api/books (Protected)
 
 Get All Books: GET /api/books
@@ -64,5 +64,5 @@ Update Book: PUT /api/books/:id (Protected)
 
 Delete Book: DELETE /api/books/:id (Protected)
 
-Authentication Middleware
+### Authentication Middleware
 To protect routes, use the authentication middleware defined in middlewares/auth/auth.Middleware.js.
