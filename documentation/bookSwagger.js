@@ -62,6 +62,7 @@ module.exports = {
         },
       },
       post: {
+        security: [{ Authorization: [] }],
         tags: ["Books"],
         summary: "Add a new book",
         description: "Add a new book to the library.",
@@ -149,6 +150,7 @@ module.exports = {
         },
       },
       put: {
+        security: [{ Authorization: [] }],
         tags: ["Books"],
         summary: "Update a book by ID",
         description: "Update a book's information by its unique ID.",
@@ -211,6 +213,7 @@ module.exports = {
         },
       },
       delete: {
+        security: [{ Authorization: [] }],
         tags: ["Books"],
         summary: "Delete a book by ID",
         description: "Delete a book from the library by its unique ID.",
