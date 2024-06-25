@@ -26,22 +26,22 @@ cd bookstore-app
 
 ```
 
-2. Install dependencies
+### 2. Install dependencies
    npm install
 
-3. Configure environment variables
+### 3. Configure environment variables
    Create a .env file in the root directory and add the following variables-TOKEN_SECRET_KEY, HOST,PORT and etc.
 
-4. Configure the database
+### 4. Configure the database
    Update the config/config.json file with your MSSQL database credentials:
 
-5. Run migrations
+### 5. Run migrations
    npx sequelize-cli db:migrate
 
-6. Start the server
+### 6. Start the server
    npm start
 
-7. After that, you must call "your-url/api/api-docs" for Swagger documentation
+### 7. After that, you must call "your-url/api/api-docs" for Swagger documentation
 
 //Swagger UI route
 app.use("/api/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
