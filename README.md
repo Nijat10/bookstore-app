@@ -43,8 +43,10 @@ cd bookstore-app
 
 ### 7. After that, you must call "your-url/api/api-docs" for Swagger documentation
 
-//Swagger UI route
+Swagger UI route
 app.use("/api/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+You must sign up, after that you must include token in Swagger UI.
 
 ## API Endpoints
 ### Authentication
